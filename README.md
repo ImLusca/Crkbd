@@ -1,7 +1,8 @@
 
 # Crkbd - Configuração personalizada do meu teclado split
 
-![photo_2025-07-04_16-38-28](https://github.com/user-attachments/assets/6edf8fc0-b3ae-4ee6-921d-6aa35c4dfbc6)
+<p align="center"><img src="https://github.com/user-attachments/assets/8ed7ae5e-146a-48ce-9c4d-cd8a6668f7bd"/></p>
+
 
 
 Este repositório contém a configuração personalizada do firmware [ZMK](https://zmk.dev/) para o meu teclado split **Crkbd (Corne Keyboard)**.
