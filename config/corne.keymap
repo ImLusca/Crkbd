@@ -18,10 +18,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q     &kp W     &kp E      &kp R      &kp T        &kp Y    &kp U     &kp I      &kp O     &kp P     &kp BSPC
-&kp LCTRL  &kp A     &kp S     &kp D      &kp F      &kp G        &kp H    &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z     &kp X     &kp C      &kp V      &kp B        &kp N    &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp ESC
-                              &kp LGUI    &mo LOWER  &kp SPACE    &kp RET  &mo RAISE &kp RALT
+&kp ESC    &kp Q     &kp W     &kp E      &kp R      &kp T        &kp Y    &kp U     &kp I      &kp O     &kp P     &kp BSPC
+&kp TAB    &kp A     &kp S     &kp D      &kp F      &kp G        &kp H    &kp J     &kp K      &kp L     &kp SEMI  &kp RET
+&kp LSHFT  &kp Z     &kp X     &kp C      &kp V      &kp B        &kp N    &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+                              &kp LCTRL   &mo LOWER  &kp SPACE    &kp SPACE &mo RAISE &kp RALT
             >;
         };
 
@@ -29,7 +29,7 @@
             display-name = "Lower";
             bindings = <
 &kp GRAVE  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0       &kp BSPC
-&trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans       &trans
+&trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp J        &kp RET
 &trans     &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &bootloader  &bt BT_CLR_ALL
                                          &trans       &trans        &trans          &trans    &trans    &trans
             >;
