@@ -10,8 +10,19 @@
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
+#define LOCK    3
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_lock {
+            timeout-ms = <100>;
+            key-positions = <37 40>;
+            bindings = <&tog LOCK>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -42,6 +53,16 @@
 &trans     &kp SQT   &kp GRAVE  &kp TILDE &kp CARET  &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp PIPE
 &trans     &trans    &trans     &trans    &trans     &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp DQT   &bt BT_CLR
                               &trans      &trans     &kp SPACE    &kp RET    &trans     &kp RALT
+            >;
+        };
+
+        lock_layer {
+            display-name = "LOCK";
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                              &none  &none  &none    &none  &none  &none
             >;
         };
     };
